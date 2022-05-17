@@ -68,3 +68,28 @@ function crimeRender(element){
         handleListener(element)
     })
 }
+
+function handleListener(element){
+    const main = document.querySelector('#main')
+    main.textContent = " "
+    const li = document.createElement('li')
+    const h3Actors = document.createElement('h5')
+    h3Actors.textContent = element.actors
+    const h3Director = document.createElement('h5')
+    h3Director.textContent = element.airector
+    const id = document.createElement('h5') 
+    id.textContent = element.id
+    const pPlot = document.createElement('h5')
+    pPlot.textContent = element.plot
+    const image = document.createElement('img')
+    image.src = element.posterUrl
+    const h3Runtime = document.createElement('h5')
+    h3Runtime.textContent = element.runtime
+    const h3Title = document.createElement('h5')
+    h3Title.textContent = element.title
+    const h3Year = document.createElement('h5')
+    h3Year.textContent = element.year
+    li.append(h3Actors,h3Runtime,h3Title,h3Year,h3Director,pPlot,image)
+    main.append(li)
+
+}
