@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoadLoaded', event => {
-
+document.addEventListener('DOMContentLoaded', event => {
+    fetchData()
+    getInput()
 
 })
 
@@ -134,7 +135,6 @@ function fetchPost (postData) {
             genres: e.target.genres.value,
             plot: e.target.plot.value,
             actors: e.target.actors.value
-    
             }
             //debugger
            fetchPost(postData)
