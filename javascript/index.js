@@ -122,3 +122,23 @@ function fetchPost (postData) {
           .then(res => genresClassification(res))
 
     }
+
+    function getInput (){
+        const form = document.getElementById('new-movie')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const  postData = {
+            titlt: e.target.title.value,
+            director: e.target.director.value,
+            posterUrl: e.target.posterUrl.value,
+            genres: e.target.genres.value,
+            plot: e.target.plot.value,
+            actors: e.target.actors.value
+    
+            }
+            //debugger
+           fetchPost(postData)
+           form.reset()
+        })
+        
+    }
