@@ -93,3 +93,18 @@ function handleListener(element){
     main.append(li)
 
 }
+
+const stars = document.querySelectorAll('.ratings_stars');
+
+document.addEventListener('click', (evt) => {
+    if (evt.target.classList.contains('ratings_stars')) {
+      let clicktargetReached = false;
+     for (const star of stars) {
+        star.classList[clicktargetReached ? 'remove' : 'add']('selected');
+        if (star === evt.target) {
+         clicktargetReached = true;
+        }
+      }
+     result.textContent = evt.target.dataset.rating;
+    }
+});
