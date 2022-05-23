@@ -1,8 +1,23 @@
 document.addEventListener('DOMContentLoaded', event => {
     fetchData()
     getInput()
+    h1Mouseover()
+
 
 })
+
+function h1Mouseover(mouse){
+    const main = document.getElementById('main')
+    const h1 = document.createElement('h1')
+    h1.innerHTML = 'Welcome to Movie App'
+    main.addEventListener('mouseover', e => {
+    h1.style.color = "green";
+    h1.innerHTML = 'Welcome to Movie App'
+    h1.innerHTML = 'Thank you'
+    })
+    main.append(h1)
+
+}
 
 function fetchData (movie){
     fetch('http://localhost:3000/movies')
@@ -118,27 +133,27 @@ function fetchPost (postData) {
         },
         body:  JSON.stringify({postData})
 
-       })
+    })
           .then(res => res.json())
           .then(res => genresClassification(res))
+}
 
-    }
+function getInput (){
+    const form = document.getElementById('new-movie')
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const  postData = {
+        titlt: e.target.title.value,
+        director: e.target.director.value,
+        posterUrl: e.target.posterUrl.value,
+        genres: e.target.genres.value,
+        plot: e.target.plot.value,
+        actors: e.target.actors.value
+        }
+        fetchPost(postData)
+        form.reset()
 
-    function getInput (){
-        const form = document.getElementById('new-movie')
-        form.addEventListener('submit', (e) => {
-            e.preventDefault()
-            const  postData = {
-            titlt: e.target.title.value,
-            director: e.target.director.value,
-            posterUrl: e.target.posterUrl.value,
-            genres: e.target.genres.value,
-            plot: e.target.plot.value,
-            actors: e.target.actors.value
-            }
-            //debugger
-           fetchPost(postData)
-           form.reset()
-        })
-        
-    }
+    })
+      
+}
+
