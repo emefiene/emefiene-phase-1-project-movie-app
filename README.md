@@ -23,8 +23,3 @@ Post API
 Home page
 Navigation
 
-
-
-
-
-## STRCTCH
