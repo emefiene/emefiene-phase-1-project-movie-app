@@ -59,6 +59,20 @@
       "plot": "The Cotton Club was a famous night club in Harlem. The story follows the people that visited the club, those that ran it, and is peppered with the Jazz music that made it so famous.",
       "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5ODAyNzA4OV5BMl5BanBnXkFtZTcwNzYwNTIzNA@@._V1_SX300.jpg"
     },
+     {
+       "id": 33,
+       "title": "Rear Window",
+       "year": "1954",
+       "runtime": "112",
+       "genres": [
+         "Mystery",
+         "Thriller"
+       ],
+       "director": "Alfred Hitchcock",
+       "actors": "James Stewart, Grace Kelly, Wendell Corey, Thelma Ritter",
+       "plot": "A wheelchair-bound photographer spies on his neighbours from his apartment window and becomes convinced one of them has committed murder.",
+       "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGUxYWM3M2MtMGM3Mi00ZmRiLWE0NGQtZjE5ODI2OTJhNTU0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+     },
     {
       "id": 4,
       "title": "Crocodile Dundee",
@@ -72,6 +86,36 @@
       "actors": "Paul Hogan, Linda Kozlowski, John Meillon, David Gulpilil",
       "plot": "An American reporter goes to the Australian outback to meet an eccentric crocodile poacher and invites him to New York City.",
       "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0MTU1MTg4NF5BMl5BanBnXkFtZTgwMDgzNzYxMTE@._V1_SX300.jpg"
+    }, 
+     {
+       "id": 11,
+       "title": "Apocalypto",
+       "year": "2006",
+       "runtime": "139",
+       "genres": [
+         "Action",
+         "Adventure",
+         "Drama"
+       ],
+       "director": "Mel Gibson",
+       "actors": "Rudy Youngblood, Dalia Hernández, Jonathan Brewer, Morris Birdyellowhead",
+       "plot": "As the Mayan kingdom faces its decline, the rulers insist the key to prosperity is to build more temples and offer human sacrifices. Jaguar Paw, a young man captured for sacrifice, flees to avoid his fate.",
+       "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTM1NjYyNTY5OV5BMl5BanBnXkFtZTcwMjgwNTMzMQ@@._V1_SX300.jpg"
+     },
+    {
+      "id": 17,
+      "title": "The Third Man",
+      "year": "1949",
+      "runtime": "93",
+      "genres": [
+        "Film-Noir",
+        "Mystery",
+        "Thriller"
+      ],
+      "director": "Carol Reed",
+      "actors": "Joseph Cotten, Alida Valli, Orson Welles, Trevor Howard",
+      "plot": "Pulp novelist Holly Martins travels to shadowy, postwar Vienna, only to find himself investigating the mysterious death of an old friend, Harry Lime.",
+      "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwNzMzMTQ0Ml5BMl5BanBnXkFtZTgwNjExMzUwNjE@._V1_SX300.jpg"
     },
     {
       "id": 6,
