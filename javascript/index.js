@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', event => {
     fetchData()
-    //getInput()
+    getInput()
     h1Mouseover()
 
 })
-
 function h1Mouseover(mouse){
     const main = document.getElementById('main')
     const h1 = document.createElement('h1')
@@ -17,7 +16,6 @@ function h1Mouseover(mouse){
     main.append(h1)
 
 }
-
 function fetchData (movie){
     fetch('http://localhost:3000/movies')
     .then(res => res.json())
@@ -81,8 +79,25 @@ function fetchPost (postData) {
              "Content-Type": 'application/json'
          },
          body:  JSON.stringify({postData})
- 
-     })
-           .then(res => res.json())
-           .then(res => genresClassification(res))
- }
+    })
+        .then(res => res.json())
+        .then(res => genresClassification(res))
+}
+function getInput (){
+    const form = document.getElementById('new-movie')
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const  postData = {
+        titlt: e.target.title.value,
+        director: e.target.director.value,
+        posterUrl: e.target.posterUrl.value,
+        genres: e.target.genres.value,
+        plot: e.target.plot.value,
+        actors: e.target.actors.value
+        }
+        fetchPost(postData)
+        form.reset()
+
+    })
+}
+
