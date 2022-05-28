@@ -74,3 +74,15 @@ document.addEventListener('click', (evt) => {
      result.textContent = evt.target.dataset.rating;
     }
 });
+function fetchPost (postData) {
+    fetch('http://localhost:3000/movies',{
+           method: 'POST',
+            headers: {
+             "Content-Type": 'application/json'
+         },
+         body:  JSON.stringify({postData})
+ 
+     })
+           .then(res => res.json())
+           .then(res => genresClassification(res))
+ }
