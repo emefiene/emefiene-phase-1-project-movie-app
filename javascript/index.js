@@ -35,7 +35,6 @@ function appendGenres(element){
 
 }
 function handleListener(element){
-    console.log(element)
     const main = document.querySelector('#main')
     main.textContent = " "
     const li = document.createElement('li')
@@ -81,7 +80,7 @@ function fetchPost (postData) {
          body:  JSON.stringify({postData})
     })
         .then(res => res.json())
-        .then(res => genresClassification(res))
+        .then(res => appendGenres(res))
 }
 function getInput (){
     const form = document.getElementById('new-movie')
@@ -97,7 +96,6 @@ function getInput (){
         }
         fetchPost(postData)
         form.reset()
-
     })
 }
 
